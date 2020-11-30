@@ -1,13 +1,10 @@
-$(function() {
-
-    var elemLink = $('.dropdown-toggle');
-    var sottoMenu = $('.dropdown-menu');
-   
+$( function () {
+    var elemLink = $('.dropdown');
+    // var sottoMenu = $('.dropdown-menu');
     elemLink.mouseenter(function () {
-        sottoMenu.show();
+        $(this).find('.dropdown-menu').show(); // find su elementi html 
     });
     elemLink.mouseleave(function () {
-        sottoMenu.hide();
+        $(this).find('.dropdown-menu').hide(); // find su elementi html 
     });
-
 });
